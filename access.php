@@ -12,7 +12,7 @@ include('config.php');
     </head>
     <body>
     	<div class="header">
-        	<h1>Cybersecurity Capstone Project</h1>
+        	<h1>Cybersecurity Capstone Project - October 2021</h1>
 	    </div>
 <?php
 //If the user is logged, we log him out
