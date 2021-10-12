@@ -165,11 +165,6 @@ else
 if ($form) 
 {
 	//We display the form again
-	//We display a message if necessary
-	if(isset($message))
-	{
-		echo '<br><div class="message">'.$message.'</div>';
-	}
 ?>
 		<div class="content">
 			<form action="register.php" method="post">
@@ -193,7 +188,11 @@ if ($form)
 			</form>
 		</div>
 <?php
-
+	//We display a message if necessary
+	if(isset($message))
+	{
+		echo '<br><div class="message">'.$message.'</div>';
+	}
 }
 ?>
 		<div class="foot"><a href="<?php echo $url_home; ?>">Go to start page</a></div>
