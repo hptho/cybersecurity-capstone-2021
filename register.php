@@ -23,7 +23,7 @@ if (isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['e
     if ($_POST['maidenname'] != '' and $_POST['maidennamerepeat'] != '' and $_POST['elemschool'] != '' and $_POST['elemschoolrepeat'] != '' and $_POST['road'] != '' and $_POST['roadrepeat'] != '')
     {
         // We check if the username only letter and numberic.
-        if (preg_match('^[a-zA-Z0-9]*$', $_POST['username']))
+        if (preg_match('^[a-zA-Z0-9_.-]*$', $_POST['username']))
         {
             if ($_POST['password'] == $_POST['passverif'])
             {
