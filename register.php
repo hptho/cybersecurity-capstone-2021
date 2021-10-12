@@ -172,8 +172,6 @@ if ($form)
 	}
 ?>
 		<div class="content">
-			<form action="regis?>
-		<div class="content">
 			<form action="register.php" method="post">
 				Please fill the following form to sign up:<br />
 				<p style="font-size:14px;color:Red;">(Password requires 8 characters minimum and must include at least one number, one lowercase letter, one uppercase letter and one symbol)</p><br />
@@ -185,7 +183,7 @@ if ($form)
 					<label for="passverif" style="text-align:left;">Repeat Password</label><input type="password" name="passverif" required/><br /><br />
 					<p style="text-align:left;text-decoration: underline;">Answer the following questions, they are asked for in case you forget your password to setup a new one:</p><br />
 					<label for="maidenname" style="width: 400px;text-align:left;">Your mother's maiden name?</label><input type="password" name="maidenname" required/><br />
-					<label for="maidennamerepeat" style="width: 400px;text-align:left;">Repeat: your mother's maiden name?</label><input type="password" name="maidennamerepeat"required /><br /><br />
+					<label for="maidennamerepeat" style="width: 400px;text-align:left;">Repeat: your mother's maiden name?</label><input type="password" name="maidennamerepeat" required /><br /><br />
 					<label for="elemschool" style="width: 400px;text-align:left;">What elementary school did you attend?</label><input type="password" name="elemschool" required/><br />
 					<label for="elemschoolrepeat" style="width: 400px;text-align:left;">Repeat: what elementary school did you attend?</label><input type="password" name="elemschoolrepeat" required/><br /><br />
 					<label for="road" style="width: 400px;text-align:left;">What is the name of the road you grew up on?</label><input type="password" name="road" required/><br />
@@ -195,8 +193,9 @@ if ($form)
 			</form>
 		</div>
 <?php
-	//We display a message if necessary
-	if(isset($message))
-	{
-		echo '<br><div class="message">'.$message.'</div>';
-	}
+
+}
+?>
+		<div class="foot"><a href="<?php echo $url_home; ?>">Go to start page</a></div>
+	</body>
+</html>
